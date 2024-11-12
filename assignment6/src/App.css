@@ -1,0 +1,92 @@
+
+body {
+  background-color: #f4f6f8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.navbar {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card {
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.search-form input[type="search"] {
+  width: 250px;
+  transition: width 0.4s ease;
+}
+.search-form input[type="search"]:focus {
+  width: 300px;
+}
+.search-form button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.search-form button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
